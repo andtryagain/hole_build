@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>&#128371;&#65039;</title>
+  </head>
+  <body style="text-align: center; background: #000000;">
+    <canvas id="unity-canvas" width=512 height=512 style="width: 512px; height: 512px; 
+    background: #000000; margin: auto;  position: absolute; top: 0; right: 0; left: 0; bottom: 0;"></canvas> 
+    <script src="Build/build.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/build.data",
+        frameworkUrl: "Build/build.framework.js",
+        codeUrl: "Build/build.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "DefaultCompany",
+        productName: "hole",
+        productVersion: "0.04",
+        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+      });
+    </script>
+  </body>
+</html>
